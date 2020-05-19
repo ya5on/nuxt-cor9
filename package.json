@@ -1,0 +1,29 @@
+{
+  "name": "cor9",
+  "version": "1.0.0",
+  "description": "descrption",
+  "author": "AlexGuy",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/apollo": "^4.0.0-rc17",
+    "@nuxtjs/markdownit": "^1.2.7",
+    "graphql": "^14.5.8",
+    "@nuxtjs/axios": "^5.3.6",
+    "jquery": "^3.4.1",
+    "nuxt": "^2.0.0",
+    "vue-backtotop": "^1.6.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
+    "@nuxtjs/vuetify": "^1.11.2",
+    "css-loader": "^3.4.2",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2"
+  }
+}

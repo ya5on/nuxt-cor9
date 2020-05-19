@@ -1,0 +1,78 @@
+@import 'components/preloader'
+
++reset()
+
+*
+  box-sizing: border-box
+
+body
+  transition: background-color .3s
+  color: #fff
+  font-size: 16px
+  font-family: 'Ubuntu', sans-serif
+  letter-spacing: 1px
+  background-color: #0E0F13
+  height: 100%
+
+a
+  text-decoration: none
+  color: white
+
+h1
+  font-size: 35px
+
+h2
+  font-size: 30px
+
+h3
+  font-size: 22px
+
+.container
+  +wrapper
+  position: relative
+  height: auto
+  +lg(max-width, 1300px)
+
+.container-min
+  max-width: 1300px
+  margin: 0 auto
+  position: relative
+  height: auto
+  padding-left: 5px
+  padding-right: 5px
+  +lg(max-width, 1250px)
+
+.btn-to-top
+  width: 45px
+  height: 45px
+  display: block
+  opacity: .6
+  transition: all .3s ease-in
+  cursor: pointer
+  outline: none
+  +md(display, none)
+
+  &:hover
+    opacity: 1
+    border-color: $main-color
+    color: $main-color
+
+.btn-box
+  width: 100%
+  display: flex
+  margin: 45px 0
+  +md(justify-content, center)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
