@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import Articles from '~/components/Articles'
-import Categories from "../../components/Categories";
+import Articles from '~/components/Blog/Articles'
+import Categories from "~/components/Blog/Categories";
 
 export default {
   data() {

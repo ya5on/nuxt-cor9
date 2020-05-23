@@ -25,47 +25,92 @@ h2
   font-size: 30px
 
 h3
-  font-size: 22px
+  color: $dark-text
+  font-size: 18px
 
 .container
   +wrapper
   position: relative
-  height: auto
-  +lg(max-width, 1300px)
+  width: 100%
 
-.container-min
-  max-width: 1300px
-  margin: 0 auto
-  position: relative
-  height: auto
-  padding-left: 5px
-  padding-right: 5px
-  +lg(max-width, 1250px)
+.wave--sinus:after
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 100%
+  height: 180px
+  background-position: 0 100%
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB2aWV3Qm94PSIwIDAgMTQ0MCAxOTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMSA3MS4xN2MxMDQuMDY0IDYwIDI0Mi44MjggOTAgNDE2LjI5IDkwQzY3Ny40ODQgMTYxLjE3IDc3Ny44NzYgMi45NDQgMTAyOC4yNC4zYzE2Ni45MS0xLjc2IDMwNC40OTggMjEuODYxIDQxMi43NiA3MC44N3YxMDBIMXYtMTAweiIgZmlsbD0iI0ZGRiIgb3BhY2l0eT0iLjI4OCIvPjxwYXRoIGQ9Ik0wIDcyLjA3NkMxMDQuMDY0IDEzMi4wMjYgMjQyLjgyOCAxNjIgNDE2LjI5IDE2MiA2NzYuNDg0IDE2MiA3NTAgMzQuNzcgMTAyNS4zMjIgMzIuMTUyIDEyMDguODcgMzAuNDA2IDEzNDcuMDk2IDQzLjcxNCAxNDQwIDcyLjA3NnYxMTguMjUxSDBWNzIuMDc2eiIgZmlsbD0iI0ZBRkFGQSIvPjxwYXRoIGQ9Ik00MTcuMTIzIDE2MC44NEM2NzcuMjM1IDE2MC44NCA3NTAuNzY0IDMzLjYxNyAxMDI2IDMxIDcwMy44MzkgNDIuNzUzIDYyOC4zNzMgMTg4LjE3OCA0MTcuMTIzIDE4OCAyNzYuMjg5IDE4Ny44OCAxMzcuNTggMTQ4Ljg1NCAxIDcwLjkyYzEwNC4wMDcgNTkuOTQ2IDI0Mi43MTQgODkuOTIgNDE2LjEyMyA4OS45MnoiIGZpbGw9IiNGMUYxRjEiLz48L2c+PC9zdmc+)
+  background-size: 100% 100%
+  background-repeat: no-repeat
+  content: ""
 
-.btn-to-top
-  width: 45px
-  height: 45px
-  display: block
-  opacity: .6
-  transition: all .3s ease-in
+.btn-group
+  display: flex
+  align-items: center
+  justify-content: center
+
+.btn
+  padding: 10px 28px
+  border-radius: 20px
+  text-align: center
+  white-space: nowrap
+  transition-duration: .4s
+  transition-timing-function: ease
   cursor: pointer
-  outline: none
-  +md(display, none)
+  font-size: 16px
+  display: inline-block
+  width: 100%
+  max-width: 190px
 
   &:hover
-    opacity: 1
-    border-color: $main-color
-    color: $main-color
+    transform: translateY(-2px)
 
-.btn-box
+.btn-contact
   width: 100%
-  display: flex
-  margin: 45px 0
-  +md(justify-content, center)
+  max-width: 190px
+  margin: 8px
+  border: 1px solid #BD2DAA
+  color: #BD2DAA
+  background-color: #fff
+  box-sizing: border-box
+
+.btn-green
+  background-color: $main-color
+
+  &:hover
+    box-shadow: 0 12px 15px 0 rgba($main-color, 0.2)
+    transform: translateY(-2px)
+    opacity: .8
+
+.btn-blue
+  background-color: $blue
+
+  &:hover
+    box-shadow: 0 12px 15px 0 rgba($blue, 0.2)
+    transform: translateY(-2px)
+    opacity: .8
+
+.btn-red
+  background-color: $red
+
+  &:hover
+    box-shadow: 0 12px 15px 0 rgba($red, 0.2)
+    transform: translateY(-2px)
+    opacity: .8
+
+.btn-dark
+  background-color: $dark
+
+  &:hover
+    box-shadow: 0 12px 15px 0 rgba($dark, 0.2)
+    transform: translateY(-2px)
+    opacity: .8
 
 
-
-
+.subtitle
+  margin-bottom: 25px
+  color: #C2B7E3
 
 
 

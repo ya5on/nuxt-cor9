@@ -1,67 +1,48 @@
 <template>
   <footer class="footer">
-    <div class="container-min">
-      <div class="footer__content">
-        <div class="footer__navigation">
-          <ul>
-            <li>
-              <nuxt-link to="/">
-                <span>Главная</span>
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/web">
-                <span>Веб разработка</span>
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/ppc">
-                <span>Контекстная реклама</span>
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/contacts">
-                <span>Контакты</span>
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/blog">
-                <span>Блог</span>
-              </nuxt-link>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__contacts">
-          <a href="tel:+380995452740">+38-099-545-27-40</a>
-          <a href="tel:+380633837133">+38-063-383-71-33</a>
-        </div>
-        <div class="footer__social">
-          <a target="_blank" href="https://t.me/alex_guy" title="telegram">
-            <img src="~assets/img/footer/telegram.svg" alt="">
-          </a>
-          <a class="viber-desktop" target="_blank" href="viber://chat?number=+380995452740" title="viber">
-            <img src="~assets/img/footer/viber.svg" alt="">
-          </a>
-          <a class="viber-mobile" target="_blank" href="viber://add?number=+380995452740" title="viber">
-            <img src="~assets/img/footer/viber.svg" alt="">
-          </a>
-          <a href="skype:ya5on_?chat" title="skype">
-            <img src="~assets/img/footer/skype.svg" alt="">
-          </a>
-          <a href="mailto:info@cor9.pro" title="email">
-            <img src="~assets/img/footer/email.svg" alt="">
-          </a>
-        </div>
-        <div class="footer__copyright">
-          <div class="logo-img-box">
-            <nuxt-link to="/" class="logo">
-              <img src="~assets/img/test-logo.png" alt="">
-            </nuxt-link>
+    <div class="container">
+      <div class="footer__items">
+        <div class="footer__column item--1">
+          <nuxt-link class="footer__logo" to="/"><img src="" alt=""/>Logo</nuxt-link>
+          <div class="footer__social">
+            <a href="">
+              <img src="/img/icons/icon--facebook.svg" alt="">
+            </a>
+            <a href="">
+              <img src="/img/icons/icon--instagram.svg" alt="">
+            </a>
+            <a href="">
+              <img src="/img/icons/icon--dribble.svg" alt="">
+            </a>
+            <a href="">
+              <img src="/img/icons/icon--github.svg" alt="">
+            </a>
+            <a href="">
+              <img src="/img/icons/icon--linkedin.svg" alt="">
+            </a>
           </div>
-          <p>©{{ new Date().getFullYear() }} Создание, продвижение и поддержка сайтов.</p>
         </div>
+        <nav class="footer__column item--2">
+          <h2 class="footer__title">
+            <nuxt-link class="footer__title" to="/">Home</nuxt-link>
+          </h2>
+          <nuxt-link class="footer__link" :to="{path: '/', hash: 'services'}">Services</nuxt-link>
+          <nuxt-link class="footer__link" :to="{path: '/', hash: 'coop'}">Coop</nuxt-link>
+          <nuxt-link class="footer__link" :to="{path: '/', hash: 'blog'}">Recent blog posts</nuxt-link>
+        </nav>
+        <nav class="footer__column item--3">
+          <h2 class="footer__title">Services</h2>
+          <nuxt-link class="footer__link" to="/web">Web</nuxt-link>
+          <nuxt-link class="footer__link" to="/ppc">ppc</nuxt-link>
+        </nav>
+        <nav class="footer__column item--4">
+          <h2 class="footer__title">Contacts</h2>
+          <a class="footer__contact" href="">Email</a>
+          <a class="footer__contact" href="">phone1</a>
+          <a class="footer__contact" href="">phone1</a>
+          <div class="footer__link">Kyiv, Ukraine</div>
+        </nav>
       </div>
-
     </div>
   </footer>
 </template>
@@ -74,110 +55,54 @@
 
 <style lang="sass" scoped>
   .footer
-    font-family: Ubuntu, sans-serif
-    background: #07070B
-    padding: 4% 0
-
-    &__title
-      color: #FF5D5D
-      font-size: 18px
-      text-transform: uppercase
-      margin-top: 20px
-      margin-bottom: 20px
-      +md(margin-top, 20px)
-      +md(text-align, center)
-
-    &__content
-      +row-flex
-      justify-content: center
-      +md(flex-direction, column)
-      +md(align-items, center)
-
-    &__navigation
-      +col
-      +size(3)
-      +size-md(12)
-      display: flex
-      flex-direction: column
-      justify-content: center
-      align-items: center
-      ul
-        display: flex
-        flex-direction: column
-        justify-content: center
-        +md(align-items, center)
-      li
-        color: #fff
-        font-size: 14px
-        line-height: 26px
-        margin-right: 35px
-        +md(margin-right, 0)
-        +md(line-height, 36px)
-        a
-          color: #fff
-          transition: color .5s ease
-          span
-            text-transform: uppercase
-          &:hover
-            color: #FF5D5D
-
-    &__submenu
-      display: flex
-      flex-direction: column
-      margin-left: 15px
-      +md(margin-left, 0)
-      li
-        list-style: square outside
-
-    &__contacts
-      +col
-      +size(3)
-      +size-md(12)
-      display: flex
-      align-items: center
-      flex-direction: column
-      +md(margin-top, 15px)
-
-      a
-        padding: 0 20px 20px
-        color: #fff
-        transition: color .5s ease
-        &:hover
-          color: #FF5D5D
+    padding-top: 48px
+    padding-bottom: 64px
+    background-color: #363537
 
     &__social
-      +col
-      +size(3)
-      +size-md(12)
       display: flex
-      justify-content: center
+      margin-top: 15px
+
       a
-        display: block
-        color: #fff
-        width: 35px
-        height: 35px
-        margin-right: 15px
-        transform: scale(1)
-        &:hover
-          transform: scale(1.1)
+        width: 32px
+        height: 32px
+        margin-right: 10px
 
+    &__items
+      +row-flex
+      justify-content: space-between
 
-      .viber-desktop
-        +sm(display, none)
-
-      .viber-mobile
-        display: none
-        +sm(display, block)
-
-    &__copyright
-      +col
-      +size(3)
+    &__column
       display: flex
       flex-direction: column
-      justify-content: space-between
-      +size-md(12)
-      text-align: center
-      +md(margin-top, 15px)
 
+    &__logo
+      font-size: 35px
+      color: $main-color
+
+    &__title
+      font-size: 18px
+      margin-bottom: 8px
+      color: #fff
+
+    &__contact
+      color: #fff
+
+    &__link
+      color: #8DA6AD
+      line-height: 24px
+
+
+    .item--1
+      +size(6)
+
+    .item--2
+      +size(2)
+
+    .item--3
+      +size(2)
+
+    .item--4
+      +size(2)
 
 </style>

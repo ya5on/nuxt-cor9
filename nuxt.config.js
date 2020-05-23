@@ -1,4 +1,3 @@
-// import colors from 'vuetify/es5/util/colors'
 
 export default {
   mode: 'universal',
@@ -19,8 +18,9 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
+
     script: [
-      { src: '/main.js' }
+      { src: '/main.js',}
     ],
   },
   /*
@@ -39,6 +39,7 @@ export default {
   */
   plugins: [
     '~/plugins/vue-backtotop',
+    // '~/plugins/scroll-to'
 
   ],
   /*
@@ -46,7 +47,6 @@ export default {
   */
   buildModules: [
     '@nuxtjs/style-resources',
-    // '@nuxtjs/vuetify',
   ],
   styleResources:{
     sass: [
@@ -59,8 +59,8 @@ export default {
   */
   modules: [
     '@nuxtjs/axios',
-    "@nuxtjs/apollo",
-    "@nuxtjs/markdownit"
+    // "@nuxtjs/apollo",
+    "@nuxtjs/markdownit",
   ],
   axios: {
 
@@ -71,27 +71,10 @@ export default {
     breaks: true,
     injected: true
   },
-  apollo: {
-    clientConfigs: {
-      default: {
-        httpEndpoint: "http://cor9.pro/graphql"
-      }
-    }
-  },
-  // vuetify: {
-  //   customVariables: ['~/assets/variables.scss'],
-  //   theme: {
-  //     dark: true,
-  //     themes: {
-  //       dark: {
-  //         primary: colors.blue.darken2,
-  //         accent: colors.grey.darken3,
-  //         secondary: colors.amber.darken3,
-  //         info: colors.teal.lighten1,
-  //         warning: colors.amber.base,
-  //         error: colors.deepOrange.accent4,
-  //         success: colors.green.accent3
-  //       }
+  // apollo: {
+  //   clientConfigs: {
+  //     default: {
+  //       httpEndpoint: "http://cor9.pro/graphql"
   //     }
   //   }
   // },
@@ -108,11 +91,42 @@ export default {
       'vue-backtotop',
     ]
   },
-  // server: {
-  //   host: '192.168.244.128',
-  //   timing: false,
-  //   https: false
-  // }
+  server: {
+    host: '192.168.244.128',
+    timing: false,
+    https: false
+  },
+  router: {
+    scrollBehavior: async function(to, from, savedPosition) {
+      if (savedPosition) {
+        return savedPosition;
+      }
 
+      const findEl = async (hash, x = 0) => {
+        return (
+          document.querySelector(hash) ||
+          new Promise(resolve => {
+            if (x > 50) {
+              return resolve(document.querySelector("#app"));
+            }
+            setTimeout(() => {
+              resolve(findEl(hash, ++x || 1));
+            }, 100);
+          })
+        );
+      };
+
+      if (to.hash) {
+        let el = await findEl(to.hash);
+        if ("scrollBehavior" in document.documentElement.style) {
+          return window.scrollTo({ top: el.offsetTop, behavior: "smooth" });
+        } else {
+          return window.scrollTo(0, el.offsetTop);
+        }
+      }
+
+      return { x: 0, y: 0 };
+    }
+  },
 
 }

@@ -1,19 +1,22 @@
 <template>
   <div id="app">
-    <navbar/>
+    <Navbar/>
     <nuxt/>
     <Footer/>
+    <ToTopBtn/>
   </div>
 </template>
 
 <script>
-  import navbar from '@/components/navbar'
-  import Footer from '@/components/Footer'
+  import Navbar from '../components/Navbar'
+  import Footer from '../components/Footer'
+  import ToTopBtn from "../components/ToTopBtn"
 
   export default {
     components: {
-      navbar,
-      Footer
+      Navbar,
+      Footer,
+      ToTopBtn
     },
   }
 </script>

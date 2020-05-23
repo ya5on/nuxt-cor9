@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Articles from '~/components/Articles'
+import Articles from '~/components/Blog/Articles'
 import axios from "axios";
 
 export default {
