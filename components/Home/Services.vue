@@ -7,26 +7,25 @@
         All without any input from you. Magic!</p>
       <div class="services__items">
         <div class="services__item">
-          <img src="/img/icons/icon--monitor.svg" alt="">
+          <img class="icon" src="/img/icons/icon--monitor.svg" alt="">
           <h3>Vue.js front‑end</h3>
           <p class="text">We are experts at creating beautiful and responsive front‑end applications using Vue.js.</p>
           <nuxt-link class="services__link btn btn-green" to="/web">Read more</nuxt-link>
         </div>
         <div class="services__item">
-          <img src="/img/icons/icon--server.svg" alt="">
+          <img class="icon" src="/img/icons/icon--server.svg" alt="">
           <h3>Vue.js front‑end</h3>
           <p class="text">We are experts at creating beautiful and responsive front‑end applications using Vue.js.</p>
           <nuxt-link class="services__link btn btn-blue" to="/ppc">Read more</nuxt-link>
         </div>
         <div class="services__item">
-          <img src="/img/icons/icon--grid.svg" alt="">
+          <img class="icon" src="/img/icons/icon--grid.svg" alt="">
           <h3>Vue.js front‑end</h3>
           <p class="text">We are experts at creating beautiful and responsive front‑end applications using Vue.js.</p>
           <nuxt-link class="services__link btn btn-red" to="/else">Read more</nuxt-link>
         </div>
       </div>
     </div>
-
   </section>
 </template>
 
@@ -61,25 +60,22 @@
       background-color: #fff
       color: #0E0F13
       max-width: 500px
-      padding: 28px 22px
+      padding: 45px 35px
       display: flex
       flex-direction: column
       align-items: center
       text-align: center
       box-shadow: 0 0 50px rgba(75,54,124,.5)
 
-      img
-        width: 35px
-        color: $main-color
-        margin-bottom: 25px
 
       .text
         color: $light-text
         font-size: 16px
+        margin-bottom: 35px
 
     &__link
       display: block
-      margin: 25px 5px 0
+      margin: auto 5px 0
 
 
 

@@ -7,17 +7,17 @@
       </div>
       <div class="coop__items">
         <div class="coop__item">
-          <img src="/img/icons/icon--briefcase.svg" alt="">
+          <img class="icon" src="/img/icons/icon--briefcase.svg" alt="">
           <h3>Vue.js front‑end</h3>
           <p class="text">We are experts at creating beautiful and responsive front‑end applications using Vue.js.</p>
         </div>
         <div class="coop__item">
-          <img src="/img/icons/icon--settings.svg" alt="">
+          <img class="icon" src="/img/icons/icon--settings.svg" alt="">
           <h3>Vue.js front‑end</h3>
           <p class="text">We are experts at creating beautiful and responsive front‑end applications using Vue.js.</p>
         </div>
         <div class="coop__item">
-          <img src="/img/icons/icon--fast-forward.svg" alt="">
+          <img class="icon" src="/img/icons/icon--fast-forward.svg" alt="">
           <h3>Vue.js front‑end</h3>
           <p class="text">We are experts at creating beautiful and responsive front‑end applications using Vue.js.</p>
         </div>
@@ -83,10 +83,7 @@
       text-align: center
 
       img
-        width: 35px
-        height: 35px
         filter: invert(100%)
-        margin-bottom: 25px
 
       .text
         color: #C2B7E3

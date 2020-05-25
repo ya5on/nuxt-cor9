@@ -6,7 +6,7 @@
           <img src="/img/icons/icon--monitor.svg" alt="">
           <p class="tags">FRONT‑END · VUE.JS · JAVASCRIPT · HTML5 · CSS3 · RESPONSIVE</p>
           <h1 class="title">Vue.js front‑end development</h1>
-          <p class="description">We are experts at creating beautiful and responsive front‑end applications using Vue.js.</p>
+          <p class="subtitle description">We are experts at creating beautiful and responsive front‑end applications using Vue.js.</p>
         </div>
         <div class="btn-group">
           <nuxt-link class="btn btn-dark" to="/">Estimate project</nuxt-link>
@@ -59,6 +59,7 @@
         margin-bottom: 40px
         max-width: 560px
         text-align: center
+        color: #9AD1C8
 
 
 

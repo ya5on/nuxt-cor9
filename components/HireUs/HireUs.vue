@@ -5,7 +5,7 @@
         <div class="hire-us__item">
           <h2 class="hire-us__title">Want to work with us?</h2>
         </div>
-        <div class="hire-us__item">
+        <div class="hire-us__item right">
           <nuxt-link class="hire-us__btn btn" to="/">Estimate project</nuxt-link>
           <button class="btn-contact btn" type="button" @click="openContactModal()">contact us</button>
         </div>
@@ -34,6 +34,9 @@
       +col
       +size(6)
 
+    .right
+      display: flex
+      justify-content: flex-end
     .btn
       display: inline-block
 
@@ -42,7 +45,6 @@
         opacity: .8
 
     &__title
-      text-align: center
       color: rgba(54,53,55,.8)
       font-size: 36px
       font-weight: bold
