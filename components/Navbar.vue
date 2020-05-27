@@ -17,7 +17,7 @@
             </nuxt-link>
           </li>
           <li class="nav__item">
-            <nuxt-link active-class="active" to="/ppc">
+            <nuxt-link active-class="active" to="/ads">
               ppc
             </nuxt-link>
           </li>

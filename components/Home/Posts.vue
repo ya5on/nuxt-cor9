@@ -1,6 +1,6 @@
 <template>
     <section>
-      Recent blog posts
+      no data
     </section>
 </template>
 
@@ -15,5 +15,8 @@ section
   text-align: center
   color: #0E0F13
   height: 200px
+  display: flex
+  justify-content: center
+  align-items: center
   background-color: #FAFAFA
 </style>
