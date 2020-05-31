@@ -2,20 +2,18 @@
   <div class="landing text-center">
     <div class="container">
       <div class="landing__content">
-        <div class="landing__title">
           <img class="icon" src="/img/icons/icon--grid.svg" alt="">
-          <p class="">WEB DESIGN · UI · UX · RESPONSIVE · PROTOTYPE · WIREFRAME</p>
+          <p class="tags">WEB DESIGN · UI · UX · RESPONSIVE · PROTOTYPE · WIREFRAME</p>
           <h1 class="title">UI & UX design</h1>
           <p class="subtitle">We love to design responsive and pixel-perfect user interfaces with top-notch user
             experience.</p>
-        </div>
         <div class="btn-group">
           <nuxt-link class="btn btn-dark" to="/">Estimate project</nuxt-link>
           <button class="btn btn-contact" type="button" @click="openContactModal()">contact us</button>
         </div>
       </div>
-      <div class="landing__uiux">
-        <article class="">
+      <div class="landing__items">
+        <article class="landing__card">
           <div class="">
             <img class="icon" src="/img/icons/icon--grid.svg" alt="">
           </div>
@@ -25,7 +23,7 @@
           </div>
         </article>
 
-        <article class="">
+        <article class="landing__card">
           <div class="">
             <img class="icon" src="/img/icons/icon--grid.svg" alt="">
           </div>
@@ -49,17 +47,56 @@
   .landing
     position: relative
     z-index: 1
-    padding-top: 120px
     padding-bottom: 32px
 
-    &__title
+    .title
+      margin-bottom: 18px
+      font-weight: 900
+      color: #ffffff
+      line-height: 56px
+
+    &__content
       text-align: center
 
-  .subtitle
-      max-width: 560px
-      margin: 0 auto
+      img
+        margin-bottom: 40px
 
-  .landing__uiux
+      .tags
+        margin-bottom: 18px
+        font-size: 13px
+        line-height: 16px
+        color: $light-text
+
+    .subtitle
+      max-width: 560px
+      margin: 0 auto 40px
+      color: $light-text
+
+    &__items
       margin-top: 148px
+      +row-flex
+      justify-content: center
+
+    &__card
+      +size(6)
+      display: flex
+      flex-direction: column
+      align-items: center
+      max-width: 370px
+      margin-bottom: 40px
+      margin-right: 15px
+      margin-left: 15px
+      padding: 48px 40px
+      border-radius: 8px
+      background-color: #fff
+      box-shadow: 0 12px 25px 0 rgba(54,53,55,.05)
+      text-align: center
+
+  .card__content
+    color: #B0B0B0
+
+  .card__title
+    margin-bottom: 15px
+
 
 </style>

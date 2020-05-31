@@ -34,6 +34,7 @@
     background-position: center top
     background-image: url("/img/images/Design/landing__bg.svg")
     background-size: cover
+    padding-top: 170px
 
     &::before
       position: absolute
