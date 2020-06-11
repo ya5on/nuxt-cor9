@@ -1,0 +1,33 @@
+import axios, * as others from 'axios'
+
+export const state = () => ({
+  articles: []
+});
+
+export const mutations = {
+  SET_ARTICLES_TO_STATE:(state, articles) => {
+    state.articles = articles
+  }
+};
+
+export const actions = {
+  GET_ARTICLES_FROM_API({commit}) {
+    return axios('http://localhost:1337/articles',{
+      method: "GET"
+    })
+      .then((articles) => {
+        commit('SET_ARTICLES_TO_STATE', articles.data);
+        return articles;
+      })
+      .catch((error) => {
+        console.log("error")
+        return error;
+      })
+  }
+};
+
+export const getters = {
+  ARTICLES(state){
+    return state.articles;
+  }
+};

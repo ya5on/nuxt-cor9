@@ -17,12 +17,19 @@
   import Cooperation from "../components/Home/Cooperation";
   import HireUs from "../components/HireUs/HireUs";
   import Posts from "../components/Home/Posts"
+  import axios from "axios";
 
   export default {
     components: {
       Landing, Services, Posts, Cooperation, HireUs,
-    }
-  };
+    },
+    data () {
+      return {
+
+      }
+    },
+  }
+
 </script>
 
 <style lang="sass" scoped>

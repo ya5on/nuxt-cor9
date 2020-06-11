@@ -43,7 +43,7 @@
   .navbar
     position: absolute
     top: 0
-    z-index: 2
+    z-index: 21
     width: 100%
     border-bottom: 1px solid $main-color
     transition: width 1s

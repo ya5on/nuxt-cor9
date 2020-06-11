@@ -1,12 +1,32 @@
 <template>
-    <section>
-      no data
-    </section>
+  <div class="container">
+    <div class="blog__posts">
+      23
+    </div>
+  </div>
 </template>
 
 <script>
+  import Articles from '~/components/Blog/Articles'
     export default {
-        name: "Posts"
+        name: "Posts",
+      components: {
+        Articles
+      },
+      methods: {
+        limitArray(arr, length = 3) {
+          if (arr && arr.length) {
+            if (length == -1) {
+              return arr;
+            }
+            if (length > arr.length) {
+              return arr;
+            }
+            return arr.slice(0, length);
+          }
+          return null
+        }
+      },
     }
 </script>
 

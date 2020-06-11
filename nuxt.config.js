@@ -5,7 +5,7 @@ export default {
   ** Headers of the page
   */
   env: {
-    strapiBaseUri: process.env.API_URL || "http://cor9.pro"
+    strapiBaseUri: process.env.API_URL || "http://localhost:1337"
   },
 
   head: {
@@ -59,7 +59,6 @@ export default {
   */
   modules: [
     '@nuxtjs/axios',
-    // "@nuxtjs/apollo",
     "@nuxtjs/markdownit",
   ],
   axios: {
@@ -71,13 +70,6 @@ export default {
     breaks: true,
     injected: true
   },
-  // apollo: {
-  //   clientConfigs: {
-  //     default: {
-  //       httpEndpoint: "http://cor9.pro/graphql"
-  //     }
-  //   }
-  // },
   /*
   ** Build configuration
   */
@@ -91,11 +83,11 @@ export default {
       'vue-backtotop',
     ]
   },
-  server: {
-    host: '192.168.244.128',
-    timing: false,
-    https: false
-  },
+  // server: {
+  //   host: '192.168.244.128',
+  //   timing: false,
+  //   https: false
+  // },
   router: {
     scrollBehavior: async function(to, from, savedPosition) {
       if (savedPosition) {

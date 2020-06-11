@@ -13,7 +13,7 @@
 
 <script>
 import Articles from '~/components/Blog/Articles'
-import axios from "axios";
+import axios, * as others from 'axios'
 
 export default {
   components: {
@@ -23,14 +23,9 @@ export default {
     return {
       category: []
     }
-
   },
-  props: {
-
-  },
-
   mounted() {
-    axios.get('http://cor9.pro/categories/'+ this.$route.params.id)
+    axios.get('http://localhost:1337/categories/'+ this.$route.params.category)
       .then(response => (this.category = response.data))
       .catch(error => {
         console.log(error);
@@ -38,6 +33,7 @@ export default {
       })
       .finally(() => (this.loading = false));
   },
+
 
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <li v-for="category in categories">
+    <li v-for="category in categories" :key="category.id" :category_data="category">
       <nuxt-link :to="{ name: 'blog-categories-id', params: { id: category.id }}">{{ category.name }}
       </nuxt-link>
     </li>
@@ -14,11 +14,13 @@
     name: "Categories",
     data () {
       return {
-        categories: []
+        categories: [],
+        loading: true,
+        errored: false,
       }
     },
     mounted() {
-      axios.get('http://cor9.pro/categories')
+      axios.get('http://localhost:1337/categories')
         .then(response =>
           (this.categories = response.data))
         .catch(error => {
