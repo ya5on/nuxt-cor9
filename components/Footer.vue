@@ -33,7 +33,8 @@
         <nav class="footer__column item--3">
           <h2 class="footer__title">Services</h2>
           <nuxt-link class="footer__link" to="/web">Web</nuxt-link>
-          <nuxt-link class="footer__link" to="/ads">ppc</nuxt-link>
+          <nuxt-link class="footer__link" to="/ads">ads</nuxt-link>
+          <nuxt-link class="footer__link" to="/order">order</nuxt-link>
         </nav>
         <nav class="footer__column item--4">
           <h2 class="footer__title">Contacts</h2>

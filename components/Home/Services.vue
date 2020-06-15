@@ -16,7 +16,7 @@
           <img class="icon" src="/img/icons/icon--server.svg" alt="">
           <h3>Vue.js front‑end</h3>
           <p class="text">We are experts at creating beautiful and responsive front‑end applications using Vue.js.</p>
-          <nuxt-link class="services__link btn btn-blue" to="/ppc">Read more</nuxt-link>
+          <nuxt-link class="services__link btn btn-blue" to="/ads">Read more</nuxt-link>
         </div>
         <div class="services__item">
           <img class="icon" src="/img/icons/icon--grid.svg" alt="">
@@ -70,7 +70,6 @@
 
       .text
         color: $light-text
-        font-size: 16px
         margin-bottom: 35px
 
     &__link

@@ -18,7 +18,8 @@
     "jquery": "^3.4.1",
     "nuxt": "^2.0.0",
     "vue-backtotop": "^1.6.1",
-    "vue-scrollto": "^2.18.1"
+    "vue-scrollto": "^2.18.1",
+    "vuelidate": "^0.7.5"
   },
   "devDependencies": {
     "@nuxtjs/style-resources": "^1.0.0",

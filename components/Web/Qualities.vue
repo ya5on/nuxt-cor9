@@ -65,7 +65,6 @@
         color: #ffffff
         margin-top: 24px
         margin-bottom: 5px
-        font-size: 18px
         font-weight: 500
         line-height: 24px
 
@@ -76,7 +75,6 @@
       p
         color: #9AD1C8
         margin-top: 5px
-        font-size: 16px
         font-weight: 400
         line-height: 24px
 

@@ -18,12 +18,17 @@
           </li>
           <li class="nav__item">
             <nuxt-link active-class="active" to="/ads">
-              ppc
+              Ads
             </nuxt-link>
           </li>
           <li class="nav__item">
             <nuxt-link active-class="active" to="/blog">
               Blog
+            </nuxt-link>
+          </li>
+          <li class="nav__item">
+            <nuxt-link active-class="active" to="/order">
+              Order
             </nuxt-link>
           </li>
         </ul>

@@ -87,5 +87,4 @@
 
       .text
         color: #C2B7E3
-        font-size: 16px
 </style>

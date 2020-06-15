@@ -6,8 +6,6 @@
     </div>
     <HireUs/>
     <Cooperation/>
-    <Posts/>
-
   </main>
 </template>
 
@@ -16,12 +14,10 @@
   import Services from "../components/Home/Services";
   import Cooperation from "../components/Home/Cooperation";
   import HireUs from "../components/HireUs/HireUs";
-  import Posts from "../components/Home/Posts"
-  import axios from "axios";
 
   export default {
     components: {
-      Landing, Services, Posts, Cooperation, HireUs,
+      Landing, Services, Cooperation, HireUs,
     },
     data () {
       return {

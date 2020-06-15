@@ -69,7 +69,6 @@
         color: $dark-text
         margin-top: 24px
         margin-bottom: 5px
-        font-size: 18px
         font-weight: 500
         line-height: 24px
 
@@ -79,7 +78,6 @@
       p
         color: #B0B0B0
         margin-top: 5px
-        font-size: 16px
         font-weight: 400
         line-height: 24px
 

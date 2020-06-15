@@ -8,7 +8,7 @@
           <p class="subtitle">We love to design responsive and pixel-perfect user interfaces with top-notch user
             experience.</p>
         <div class="btn-group">
-          <nuxt-link class="btn btn-dark" to="/">Estimate project</nuxt-link>
+          <nuxt-link class="btn btn-dark" to="/order">Order project</nuxt-link>
           <button class="btn btn-contact" type="button" @click="openContactModal()">contact us</button>
         </div>
       </div>
@@ -63,7 +63,6 @@
 
       .tags
         margin-bottom: 18px
-        font-size: 13px
         line-height: 16px
         color: $light-text
 

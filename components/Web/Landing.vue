@@ -9,7 +9,7 @@
           <p class="subtitle description">We are experts at creating beautiful and responsive front‑end applications using Vue.js.</p>
         </div>
         <div class="btn-group">
-          <nuxt-link class="btn btn-dark" to="/">Estimate project</nuxt-link>
+          <nuxt-link class="btn btn-dark" to="/order">Order project</nuxt-link>
           <button class="btn btn-contact" type="button" @click="openContactModal()">contact us</button>
         </div>
       </div>
@@ -45,7 +45,6 @@
 
       .tags
         margin-bottom: 18px
-        font-size: 13px
         line-height: 16px
 
 

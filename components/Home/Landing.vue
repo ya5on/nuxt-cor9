@@ -7,7 +7,7 @@
           <p>We excel at building modern web applications, providing full-stack JavaScript and Google Ads services for
             websites, companies and startups.</p>
           <div>
-            <nuxt-link class="btn btn-red" to="/">Estimate project</nuxt-link>
+            <nuxt-link class="btn btn-red" to="/order">Order project</nuxt-link>
             <button class="btn-contact btn" type="button" @click="openContactModal()">contact us</button>
           </div>
         </div>
