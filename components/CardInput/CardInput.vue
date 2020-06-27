@@ -12,15 +12,10 @@
            v-bind="$attrs"/>
     <label class="card-input__label o-card mb-24 medium-mb-0"
            :for="id">
-    <div class="row align-middle">
-      <div class="column small-4 medium-12 medium-mb-24">
-        <img class="card-input__icon" :type="icon">
-      </div>
-      <div class="column small-8 medium-12 text-left medium-text-center">
-        <h3 class="card-input__heading-3 o-heading-3">
+    <div class="row">
+        <h3 class="card-input__heading-3">
           <slot></slot>
         </h3>
-      </div>
     </div>
   </label></div>
 </template>
@@ -70,21 +65,22 @@
 
   .card-input__label
     display: block
-    transition-duration: 1s
+    transition-duration: .5s
     transition-property: transform
-
+    padding: 48px 36px
+    border-radius: 8px
+    background-color: #fff
+    box-shadow: 0 12px 25px 0 rgba($main-color, 0.2)
     cursor: pointer
+    border: 1px solid rgba($main-color, 0.2)
 
     &:hover
-
-
-  .card-input__icon
-    width: 100%
-    height: 48px
+      transform: translateY(-3px)
 
   .card-input__heading-3
     margin-top: 0
     margin-bottom: 0
+    text-align: center
 
 </style>
 

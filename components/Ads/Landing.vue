@@ -1,5 +1,5 @@
 <template>
-  <div class="landing text-center">
+  <div class="landing">
     <div class="container">
       <div class="landing__content">
           <img class="icon" src="/img/icons/icon--grid.svg" alt="">

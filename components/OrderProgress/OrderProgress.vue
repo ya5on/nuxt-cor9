@@ -22,8 +22,9 @@
   .survey-progress
     position: relative
     width: 100%
-    height: 3px
+    height: 5px
     background-color: rgba($main-color, 0.08)
+    margin-bottom: 32px
 
   .survey-progress__step
     position: absolute

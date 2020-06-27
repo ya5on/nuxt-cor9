@@ -1,64 +1,79 @@
 <template>
   <section class="survey">
-    <form class="row align-center">
-      <fieldset class="column small-12 large-9 mb-64 medium-mb-80">
-        <header class="survey__header mb-16">
-          <h2 class="o-heading-1 c-ship-gray-80 pr-8">h2</h2><span class="o-heading-1 c-ship-gray-20">1/4</span>
+    <form class="container">
+      <fieldset class="survey__field">
+        <header class="survey__header">
+          <h2 class="">Where do we start?</h2>
+          <span class="">1/4</span>
         </header>
-        <OrderProgress class="mb-32" :step="1"></OrderProgress>
-        <div class="row">
-          <div class="column small-12 medium-4">
-            <CardInput type="radio" icon="icon--play" v-model="questionStart" name="questionStart" value="answerNew">
-              answer
+        <OrderProgress :step="1"></OrderProgress>
+        <div class="survey__items">
+          <div class="survey__item">
+            <CardInput type="radio"  v-model="questionStart" name="questionStart" value="answerNew">
+              <img class="icon" src="/img/icons/icon--play.svg" alt="">
+              Start a new project
             </CardInput>
           </div>
-          <div class="column small-12 medium-4">
-            <CardInput type="radio" icon="icon--fast-forward" v-model="questionStart" name="questionStart"
-                       value="answerContinue">answer
+          <div class="survey__item">
+            <CardInput type="radio" v-model="questionStart" name="questionStart"
+                       value="answerContinue">
+              <img class="icon" src="/img/icons/icon--fast-forward.svg" alt="">
+              Continue a project
             </CardInput>
           </div>
         </div>
       </fieldset>
-      <fieldset class="column small-12 large-9 mb-64 medium-mb-80">
-        <header class="survey__header mb-16">
-          <h2 class="o-heading-1 c-ship-gray-80 pr-8">answer</h2><span class="o-heading-1 c-ship-gray-20">2/4</span>
+      <fieldset class="survey__field">
+        <header class="survey__header">
+          <h2 class="">
+            What is the scope of your project?
+          </h2>
+          <span class="">2/4</span>
         </header>
-        <OrderProgress class="mb-32" :step="2"></OrderProgress>
-        <div class="row">
-          <div class="column small-12 medium-4">
-            <CardInput type="checkbox" icon="icon--monitor" v-model="questionScope.answerFrontEnd">answer</CardInput>
+        <OrderProgress :step="2"></OrderProgress>
+        <div class="survey__items">
+          <div class="survey__item">
+            <CardInput type="checkbox" v-model="questionScope.answerFrontEnd">
+              <img class="icon" src="/img/icons/icon--monitor.svg" alt="">Front‑end</CardInput>
           </div>
-          <div class="column small-12 medium-4">
-            <CardInput type="checkbox" icon="icon--server" v-model="questionScope.answerBackEnd">answer</CardInput>
+          <div class="survey__item">
+            <CardInput type="checkbox" v-model="questionScope.answerBackEnd">
+              <img class="icon" src="/img/icons/icon--server.svg" alt="">Back‑end</CardInput>
           </div>
-          <div class="column small-12 medium-4">
-            <CardInput type="checkbox" icon="icon--grid" v-model="questionScope.answerDesign">answer</CardInput>
+          <div class="survey__item">
+            <CardInput type="checkbox" v-model="questionScope.answerDesign">
+              <img class="icon" src="/img/icons/icon--grid.svg" alt="">Google Ads</CardInput>
           </div>
         </div>
       </fieldset>
-      <fieldset class="column small-12 large-9 mb-64 medium-mb-80">
-        <header class="survey__header mb-16">
-          <h2 class="o-heading-1 c-ship-gray-80 pr-8">h2</h2><span class="o-heading-1 c-ship-gray-20">3/4</span>
+      <fieldset class="survey__field">
+        <header class="survey__header">
+          <h2 class="">What is the platform of your project?</h2>
+          <span class="">3/4</span>
         </header>
-        <OrderProgress class="mb-32" :step="3"></OrderProgress>
-        <div class="row">
-          <div class="column small-12 medium-4">
-            <CardInput type="checkbox" icon="icon--monitor" v-model="questionPlatform.answerDesktop">answer</CardInput>
+        <OrderProgress :step="3"></OrderProgress>
+        <div class="survey__items">
+          <div class="survey__item">
+            <CardInput type="checkbox" v-model="questionPlatform.answerDesktop">
+              <img class="icon" src="/img/icons/icon--monitor.svg" alt="">Desktop</CardInput>
           </div>
-          <div class="column small-12 medium-4">
-            <CardInput type="checkbox" icon="icon--smartphone" v-model="questionPlatform.answerMobile">answer
+          <div class="survey__item">
+            <CardInput type="checkbox" v-model="questionPlatform.answerMobile">
+              <img class="icon" src="/img/icons/icon--smartphone.svg" alt="">Mobile
             </CardInput>
           </div>
-          <div class="column small-12 medium-4">
-            <CardInput type="checkbox" icon="icon--file" v-model="questionPlatform.answerOther">answer</CardInput>
+          <div class="survey__item">
+            <CardInput type="checkbox" v-model="questionPlatform.answerOther">
+              <img class="icon" src="/img/icons/icon--file.svg" alt="">Other</CardInput>
           </div>
         </div>
       </fieldset>
-      <fieldset class="column small-12 large-9">
-        <header class="survey__header mb-16">
-          <h2 class="o-heading-1 c-ship-gray-80 pr-8">h2</h2><span class="o-heading-1 c-ship-gray-20">4/4</span>
+      <fieldset class="survey__field">
+        <header class="survey__header">
+          <h2 class="">Any more details about the project?</h2>
+          <span class="">4/4</span>
         </header>
-        <OrderProgress class="mb-32" :step="4"></OrderProgress>
+        <OrderProgress :step="4"></OrderProgress>
 <!--        <div class="row">-->
 <!--          <div class="column small-12 medium-4">-->
 <!--            <input class="o-input" type="text" v-model="name"-->
@@ -194,25 +209,43 @@
   .survey
     padding-top: 40px
     padding-bottom: 64px
-    background-color: $dark-text
+    background-color: #FAFAFA
     background-position: center bottom
     background-image: url("/img/images/wave--gray.svg")
     background-size: 300% 500px
     background-repeat: no-repeat
 
-  .survey__header
-    display: flex
-    justify-content: space-between
+    &__field
+      margin-bottom: 80px
 
-  .survey__btn
+      h2, span
+        color: $dark-text
+        line-height: 56px
+        font-size: 36px
+
+    &__header
+      display: flex
+      justify-content: space-between
+
+    &__items
+      +row-flex
+      justify-content: flex-start
+
+    &__item
+      +col
+      +size(4)
+      +size-md(12)
+      margin-bottom: 20px
+
+    &__btn
+      width: 100%
+      max-width: 320px
+      background-image: linear-gradient(-45deg, $gradient)
+
+      &:hover
+
+  .icon
     width: 100%
-    max-width: 320px
-    background-image: linear-gradient(-45deg, $gradient)
-
-    &:hover
-
-  svg.survey__icon
-    width: 24px
-    height: 24px
+    height: 48px
 
 </style>
