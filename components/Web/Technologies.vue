@@ -41,6 +41,8 @@
   .technologies
     padding-top: 80px
     padding-bottom: 104px
+    +md(padding-top, 10px)
+    +md(padding-bottom, 10px)
 
     h2
       color: $dark-text
@@ -66,5 +68,7 @@
         margin: 20px
         border-radius: 100%
         box-shadow: 0 12px 17px 0 rgba($dark-text, 0.1)
+        +md(width, 44px)
+        +md(height, 44px)
 
 </style>

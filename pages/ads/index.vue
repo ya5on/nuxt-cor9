@@ -125,18 +125,27 @@
       background-color: #fafafa
       color: $dark-text
       text-align: justify
+      +md(padding-top, 10px)
+      +md(padding-bottom, 10px)
 
       .responsiveness
         +row-flex
         justify-content: space-around
+        +md(flex-direction, column-reverse)
 
         &__item--1
+          +col
           +size(6)
+          +size-md(12)
+          +md(text-align, center)
 
         &__item--2
+          +col
           +size(3)
+          +size-md(12)
           display: flex
           justify-content: flex-end
+          +md(justify-content, center)
 
 
   .ads__typography
@@ -147,6 +156,8 @@
       background-image: url("/img/Design/landing__bg.svg")
       background-size: cover
       text-align: justify
+      +md(padding-top, 150px)
+      +md(padding-bottom, 60px)
 
       &::before
         position: absolute
@@ -159,6 +170,7 @@
         background-size: 100% 100%
         background-repeat: no-repeat
         content: ""
+        +md(height, 150px)
 
 
       &::after
@@ -176,15 +188,21 @@
       .typography
         +row-flex
         justify-content: space-around
+        +md(text-align, center)
 
         h2
           text-align: right
+          +md(text-align, center)
 
         &__item--1
           +size(3)
+          +size-md(12)
+
 
         &__item--2
           +size(6)
+          +size-md(12)
+
 
 
   .ads__semantics
@@ -193,18 +211,27 @@
     background-color: #fafafa
     color: $dark-text
     text-align: justify
+    +md(padding-top, 50px)
+    +md(padding-bottom, 10px)
 
     .semantics
       +row-flex
       justify-content: space-around
+      +md(flex-direction, column-reverse)
 
       &__item--1
+        +col
         +size(6)
+        +size-md(12)
+        +md(text-align, center)
 
       &__item--2
+        +col
         +size(3)
+        +size-md(12)
         display: flex
         justify-content: flex-end
+        +md(justify-content, center)
 
 
 
@@ -216,6 +243,8 @@
       background-image: url("/img/Design/landing__bg.svg")
       background-size: cover
       text-align: justify
+      +md(padding-top, 140px)
+      +md(padding-bottom, 80px)
 
 
       &::before
@@ -246,15 +275,20 @@
       .rhythm
         +row-flex
         justify-content: space-around
+        +md(text-align, center)
 
         h2
           text-align: right
+          +md(text-align, center)
 
         &__item--1
           +size(3)
+          +size-md(12)
+          +md(justify-content, center)
 
         &__item--2
           +size(6)
+          +size-md(12)
 
   .ads__tools
       position: relative

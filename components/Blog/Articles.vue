@@ -26,7 +26,6 @@
 
 <script>
 
-
   let moment = require("moment");
   export default {
     name: "Articles",
@@ -42,7 +41,6 @@
         type: Number
       },
       published_at: {
-
         required: true,
       },
       title: {
@@ -79,10 +77,13 @@
       overflow: hidden
       min-height: 350px
       max-height: 380px
+      +md(flex-direction, column)
+      +md(max-height, auto)
 
 
       &__content
         +size(6)
+        +size-md(12)
         color: #0E0F13
         padding: 48px 40px
         display: flex
@@ -113,6 +114,7 @@
 
       &__cover
         +size(6)
+        +size-md(12)
         height: auto
         background-size: cover
         background-repeat: no-repeat

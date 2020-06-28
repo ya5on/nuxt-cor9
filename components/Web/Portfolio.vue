@@ -39,6 +39,8 @@
     padding-bottom: 140px
     position: relative
     z-index: 1
+    +md(padding-top, 130px)
+    +md(padding-bottom, 60px)
 
     h2
       padding-bottom: 25px
@@ -58,6 +60,7 @@
     &__item
       +col
       +size(4)
+      +size-md(12)
       border-radius: 15px
       background-color: #fff
       color: #0E0F13
@@ -68,6 +71,7 @@
       align-items: center
       text-align: center
       box-shadow: 0 0 50px rgba(75,54,124,.5)
+      +md(margin-bottom, 35px)
 
 
       .text

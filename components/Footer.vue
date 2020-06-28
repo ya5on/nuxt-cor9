@@ -59,27 +59,36 @@
     padding-top: 48px
     padding-bottom: 64px
     background-color: #363537
+    +md(padding-bottom, 5px)
 
     &__social
       display: flex
       margin-top: 15px
+      +md(justify-content, center)
 
       a
         width: 32px
         height: 32px
         margin-right: 10px
 
+
     &__items
       +row-flex
       justify-content: space-between
+      +md(flex-direction, column)
+      +md(align-items, center)
+
 
     &__column
       display: flex
       flex-direction: column
+      +md(align-items, center)
+      +md(margin-bottom, 35px)
 
     &__logo
       font-size: 35px
       color: $main-color
+      +md(text-align, center)
 
     &__title
       font-size: 18px
@@ -96,14 +105,18 @@
 
     .item--1
       +size(6)
+      +size-md(12)
 
     .item--2
       +size(2)
+      +size-md(12)
 
     .item--3
       +size(2)
+      +size-md(12)
 
     .item--4
       +size(2)
+      +size-md(12)
 
 </style>

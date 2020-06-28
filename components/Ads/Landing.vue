@@ -75,9 +75,11 @@
       margin-top: 148px
       +row-flex
       justify-content: center
+      +md(margin-top, 35px)
 
     &__card
       +size(6)
+      +size-md(12)
       display: flex
       flex-direction: column
       align-items: center

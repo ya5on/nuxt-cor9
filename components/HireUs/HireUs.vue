@@ -24,6 +24,7 @@
   .hire-us
     padding: 130px 0
     background-color: #FAFAFA
+    +md(padding, 0)
 
     &__items
       +row-flex
@@ -33,10 +34,12 @@
     &__item
       +col
       +size(6)
+      +size-md(12)
 
     .right
       display: flex
       justify-content: flex-end
+      +md(justify-content, center)
 
     .btn
       display: inline-block
@@ -48,6 +51,7 @@
     &__title
       color: rgba(54,53,55,.8)
       font-weight: bold
+      +md(text-align, center)
 
     &__btn
       width: 100%

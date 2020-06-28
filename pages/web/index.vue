@@ -101,6 +101,7 @@
         background-size: 100%
         background-repeat: no-repeat
         content: ""
+        +md(height, 120px)
 
 
       &::after

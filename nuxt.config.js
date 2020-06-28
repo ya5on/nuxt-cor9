@@ -77,8 +77,6 @@ export default {
   */
   plugins: [
     '~/plugins/vue-backtotop',
-    // '~/plugins/scroll-to'
-
   ],
   /*
   ** Nuxt.js dev-modules
@@ -104,6 +102,15 @@ export default {
     '@nuxtjs/style-resources',
     "@nuxtjs/markdownit"
   ],
+
+  webfontloader: {
+    events: false,
+    google: {
+      families: ['Ubuntu:400,500,600:cyrillic&display=swap']
+    },
+    timeout: 5000
+  },
+
   axios: {
 
   },

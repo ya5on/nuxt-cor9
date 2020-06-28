@@ -43,6 +43,8 @@
     z-index: 1
     padding-top: 160px
     padding-bottom: 230px
+    +md(padding-top, 60px)
+    +md(padding-bottom, 110px)
 
     &__content
       text-align: center
@@ -59,7 +61,9 @@
     &__element
       +col
       +size(3)
+      +size-md(12)
       text-align: center
+      +md(margin-bottom, 35px)
 
       h3
         color: #ffffff

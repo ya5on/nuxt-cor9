@@ -44,6 +44,7 @@
     padding-top: 60px
     padding-bottom: 15px
     background-color: #fafafa
+    +md(padding-top, 5px)
 
     &__content
       text-align: center
@@ -63,7 +64,9 @@
     &__element
       +col
       +size(3)
+      +size-md(12)
       text-align: center
+      +md(margin-bottom, 35px)
 
       h3
         color: $dark-text

@@ -74,6 +74,7 @@
     &__item
       +col
       +size(4)
+      +size-md(12)
       color: #0E0F13
       max-width: 500px
       padding: 28px 22px

@@ -46,6 +46,7 @@
       .tags
         margin-bottom: 18px
         line-height: 16px
+        +md(text-align, center)
 
 
       .title
@@ -53,6 +54,7 @@
         font-weight: 900
         color: #ffffff
         line-height: 56px
+        +md(text-align, center)
 
       .description
         margin-bottom: 40px

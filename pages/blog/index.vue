@@ -32,7 +32,6 @@ import {mapActions, mapGetters} from "vuex"
 export default {
   data() {
     return {
-
     }
   },
   components: {
@@ -46,11 +45,11 @@ export default {
   },
   methods: {
     ...mapActions([
-      'GET_ARTICLES_FROM_API'
+      'GET_ARTICLES'
     ]),
   },
   mounted() {
-    this.GET_ARTICLES_FROM_API()
+    this.GET_ARTICLES()
   }
 
 

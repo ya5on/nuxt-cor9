@@ -59,11 +59,25 @@
 
     &__text
       +size(7)
+      +size-md(12)
+
+      h1
+        margin-bottom: 35px
+
+      p
+        margin-bottom: 35px
+
+      .btn-contact
+        margin: 0
+
+      .btn
+        margin-bottom: 10px
 
     &__slider
       +size(5)
       display: flex
       justify-content: flex-end
+      +md(display, none)
 
     &__img
         display: block
