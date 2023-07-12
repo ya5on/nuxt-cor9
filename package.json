@@ -26,7 +26,7 @@
     "intersection-observer": "^0.7.0",
     "jquery": "^3.4.1",
     "moment": "^2.27.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^9.0.0",
     "normalize.css": "8.0.1",
     "nuxt": "2.11.0",
     "nuxt-trailingslash-module": "1.1.0",
@@ -60,6 +60,6 @@
     "eslint-plugin-standard": "4.0.1",
     "eslint-plugin-vue": "6.1.2",
     "prettier": "1.19.1",
-    "prettier-eslint": "9.0.1"
+    "prettier-eslint": "15.0.1"
   }
 }
